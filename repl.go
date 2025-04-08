@@ -11,10 +11,6 @@ import (
 
 var cliName string = "Pokedex"
 
-func printPrompt() {
-	fmt.Print(cliName, " > ")
-}
-
 func printUnknown(text string) {
 	fmt.Println(text, ": command not found")
 }
