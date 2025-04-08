@@ -86,7 +86,6 @@ func getCommands() map[string]cliCommand {
 func startRepl(cfg *config) {
 	reader := bufio.NewScanner(os.Stdin)
 	for {
-		printPrompt()
 		reader.Scan()
 
 		text := cleanInput(reader.Text())
